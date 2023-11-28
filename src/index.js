@@ -1,3 +1,3 @@
-import agenda from "./homepage";
+import agenda from "./homepage"
 
 agenda()

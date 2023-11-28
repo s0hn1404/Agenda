@@ -1,6 +1,27 @@
-#homepage{
-    background-color: aqua;
-    width: 100px;
-    height: 100px;
+html{
+    height: 100vh;
+    width: 100vw;
 }
 
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#homepage{
+    display: flex;
+    background-color: aqua;
+    width: 100vw;
+    height: 100vh;
+}
+
+.daydate{
+    font-size: 3em;
+}
+
+.sidebar{
+    display: grid;
+    width: 15vw;
+    height: 100vh;
+    background-color: blue;
+}
