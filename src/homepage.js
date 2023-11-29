@@ -42,6 +42,23 @@ const agenda = () =>{
     const daymonth = document.createElement('div')
     daymonth.textContent =  Date().slice(4,7)
     datecontainer.appendChild(daymonth)
+
+    const icon = document.querySelector(".listicon")
+    icon.classList.add('icon')
+    main.append(icon)
+
+    const addtask = document.createElement('div')
+    addtask.classList.add('addtask')
+    main.append(addtask)
+
+    const addtaskbtn = document.createElement('div')
+    addtaskbtn.classList.add('addtaskbtn')
+    addtask.append(addtaskbtn)
+
+    const addtasktxt = document.createElement('textarea')
+    addtasktxt .classList.add('addtasktxt')
+    addtask.append(addtasktxt)
+
 }
 
 export default agenda

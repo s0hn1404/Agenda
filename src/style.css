@@ -1,18 +1,20 @@
 html{
-    height: 100vh;
-    width: 100vw;
+    /* height: 100vh;
+    width: 100vw; */
 }
 
 body{
     margin: 0;
     padding: 0;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 #homepage{
     display: flex;
     background-color: aqua;
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .daydate{
@@ -24,4 +26,54 @@ body{
     width: 15vw;
     height: 100vh;
     background-color: blue;
+}
+
+.main{
+    width: 85vw;
+    text-align: -webkit-center;
+}
+
+.welcome,.datecontainer{
+    text-align: center;
+}
+
+.welcome{
+    margin: 10px;
+    padding: 13px;
+    font-size: 2em;
+}
+
+.datecontainer{
+    font-size: 1.5em;
+}
+
+.addtask{
+    margin-top: 44vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+    
+    .addtaskbtn{
+    display: inline-flex;
+    height: 6.5vh;
+    width: 4vw;
+    background-color: black;
+    /* position: absolute; */
+    border-radius: 10px 0px 0px 10px;
+}
+
+.addtasktxt{
+    resize: none;
+    height: 6vh;
+    line-height: 45px;
+    border: none;
+    display: inline-flex;
+    width: 55vw;
+    border-radius: 0px 10px 10px 0px
+}
+
+.listicon{
+    width: 10px;
+    height: 10px;
 }
