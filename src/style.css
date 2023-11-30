@@ -70,10 +70,14 @@ body{
     border: none;
     display: inline-flex;
     width: 55vw;
-    border-radius: 0px 10px 10px 0px
+    border-radius: 0px 10px 10px 0px;
+    font-size: 2em;
+    outline: none;
 }
 
 .listicon{
-    width: 10px;
-    height: 10px;
+    width: 62px;
+    height: 47px;
+    cursor: pointer;
+    color: #fff;
 }
