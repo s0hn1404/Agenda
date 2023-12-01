@@ -12,7 +12,7 @@ body{
 
 #homepage{
     display: flex;
-    background-color: aqua;
+    background-color: #27374D;
     width: 100vw;
     /* height: 100vh; */
 }
@@ -22,15 +22,19 @@ body{
 }
 
 .sidebar{
-    display: grid;
-    width: 15vw;
+    display: none;
+    /* display: grid; */
+    width: 23vw;
     height: 100vh;
-    background-color: blue;
+    background-color: #9DB2BF;
 }
 
 .main{
-    width: 85vw;
+    width: 100vw;
+    height: 100vh;
+    /* width: 85vw; */
     text-align: -webkit-center;
+    color: white;
 }
 
 .welcome,.datecontainer{
@@ -80,4 +84,50 @@ body{
     height: 47px;
     cursor: pointer;
     color: #fff;
+}
+
+.star{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 25px;
+    top: 25px;
+}
+
+.fa-star{
+    font-size: 2.4em;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    cursor: pointer;
+    color: white;
+}
+
+.fa-thumbtack{
+    font-size: 1em;
+    position: absolute;
+    left: 232px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.thumbtackbox{
+    position: absolute;
+    left: 232px;
+    top: 5px;
+    width: 13px;
+    height: 17px;
+}
+
+.user{
+    width: 86px;
+    height: 39px;
+    color: #0c1810;
+    font-size: 1em;
+    left: 110px;
+    top: 25px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    POSITION: absolute;
 }

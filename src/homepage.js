@@ -12,6 +12,18 @@ const agenda = () =>{
     main.classList.add('main')
     home.appendChild(main)
 
+    const iconstar = document.querySelector('.fa-star')
+    main.appendChild(iconstar)
+    const star = document.createElement('div')
+    star.classList.add('star')
+    home.appendChild(star)
+    star.addEventListener('mouseover', (e) => {
+        sidebar.style.display = 'grid'
+    })
+    main.addEventListener('mouseover', (e) =>{
+        sidebar.style.display = 'none'
+    })
+
     const welcomecontainer = document.createElement('div')
     welcomecontainer.classList.add('welcome')
     main.append(welcomecontainer)
