@@ -6,14 +6,23 @@ const agenda = () =>{
     const sidebar = document.createElement('div')
     sidebar.classList.add('sidebar')
     home.appendChild(sidebar)
-   
+    const next7daysmain = document.createElement('div')
+    next7daysmain.classList.add('next7daysmain')
+    home.appendChild(next7daysmain)
+    const tasksmain = document.createElement('div')
+    tasksmain.classList.add('tasksmain')
+    home.appendChild(tasksmain)
+    const calendarmain = document.createElement('div')
+    calendarmain.classList.add('calendarmain')
+    home.appendChild(calendarmain)
+
     const main = document.createElement("div")
     let date = new Date();
     main.classList.add('main')
     home.appendChild(main)
 
     const iconstar = document.querySelector('.fa-star')
-    main.appendChild(iconstar)
+    home.appendChild(iconstar)
     const star = document.createElement('div')
     star.classList.add('star')
     home.appendChild(star)
@@ -21,6 +30,15 @@ const agenda = () =>{
         sidebar.style.display = 'grid'
     })
     main.addEventListener('mouseover', (e) =>{
+        sidebar.style.display = 'none'
+    })
+    // next7daysmain.addEventListener('mouseover', (e) =>{
+    //     sidebar.style.display = 'none'
+    // })
+    tasksmain.addEventListener('mouseover', (e) =>{
+        sidebar.style.display = 'none'
+    })
+    calendarmain.addEventListener('mouseover', (e) =>{
         sidebar.style.display = 'none'
     })
 
